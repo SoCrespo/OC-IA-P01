@@ -1,3 +1,11 @@
+:: This script calls the Azure Langage detection API to detect the language of a text.
+:: How to use:
+:: 1) set the API key to the API_KEY environment variable, e.g. : set API_KEY=123456789abcde
+:: 2) put the text to be analyzed in a .txt file. Only the first line (limited by \n) will be treted. E.g.: 
+:: echo Never gonna give you up, never gonna let you down>test.txt 
+:: Call the script with he text file name as argument, e.g. : projet_01.bat test.txt
+
+
 @ECHO OFF
 
 IF "%1"=="" (
